@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memories 💙</title>
+
+  <!-- Handwritten font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="memories.css" />
+</head>
+<body>
+
+  <!-- Floating hearts -->
+  <div class="hearts"></div>
+
+  <div class="container">
+
+    <!-- MESSAGE -->
+    <div class="message-card">
+      <h2>💌 Message</h2>
+
+      <p>
+        I don’t always say this out loud, but today I really want you to know how special you are to me.
+        Having you as my brother is one of the biggest blessings of my life.
+        What I admire most about you is the way you care — genuinely and selflessly.
+        You show up not because you have to, but because you choose to.
+      </p>
+
+      <p>
+        You’ve been my strength when I felt weak, my comfort when I felt lost,
+        and my support even when I didn’t ask for it.
+        They say family is about blood, but you’ve shown me that real family is about the heart.
+        Even though we don’t share the same blood, the bond we share feels just as real,
+        just as strong, and just as meaningful.
+      </p>
+
+      <p>
+        You have a way of making things feel lighter, even on heavy days.
+        Your words, your actions, and even your silence at times
+        have comforted me more than you may ever realize.
+        No matter where life takes us or how circumstances change,
+        I want you to know that you will always have a place in my life.
+      </p>
+
+      <p class="love">I love you 💖</p>
+    </div>
+
+    <!-- COLLAGE -->
+    <div class="gallery">
+      <img src="images/img1.jpg" onclick="openLightbox(this)">
+      <img src="images/img2.jpg" onclick="openLightbox(this)">
+      <img src="images/img3.jpg" onclick="openLightbox(this)">
+      <img src="images/img4.jpg" onclick="openLightbox(this)">
+      <img src="images/img5.jpg" onclick="openLightbox(this)">
+      <img src="images/img6.jpg" onclick="openLightbox(this)">
+      <img src="images/img7.jpg" onclick="openLightbox(this)">
+      <img src="images/img8.jpg" onclick="openLightbox(this)">
+      <img src="images/img9.jpg" onclick="openLightbox(this)">
+      <img src="images/img10.jpg" onclick="openLightbox(this)">
+      <img src="images/img11.jpg" onclick="openLightbox(this)">
+      <img src="images/img12.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <button class="final-btn" onclick="goToThankYou()">💙 One Last Thing</button>
+
+    <button class="back-btn" onclick="goBack()">← Back</button>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <span class="close">✖</span>
+    <img id="lightbox-img">
+  </div>
+
+  <script src="memories.js"></script>
+</body>
+</html>
